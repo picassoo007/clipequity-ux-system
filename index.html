@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipEquity UX Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .dashboard-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 450px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .brand span {
+            color: #ff4a4a; /* Solid Red U */
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #da1b60, #ff8a00);
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .stat-group {
+            margin-bottom: 20px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f0f6fc;
+        }
+
+        .grid-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .sub-card {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .sub-value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f0f6fc;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            background: #238636;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .action-btn:hover {
+            background: #2ea043;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-card">
+        <div class="header">
+            <div class="brand"><span>U</span>CHAT // Equity</div>
+            <div class="badge">Diamond Tier</div>
+        </div>
+
+        <div class="stat-group">
+            <div class="stat-label">Total Performance Payout</div>
+            <div class="stat-value">$2,934.00</div>
+        </div>
+
+        <div class="grid-stats">
+            <div class="sub-card">
+                <div class="stat-label">Cumulative Views</div>
+                <div class="sub-value">652,000</div>
+            </div>
+            <div class="sub-card">
+                <div class="stat-label">Clips Approved</div>
+                <div class="sub-value">42</div>
+            </div>
+        </div>
+
+        <a href="#" class="action-btn">Request Payout Settlement</a>
+    </div>
+
+</body>
+</html>
